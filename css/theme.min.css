@@ -1085,7 +1085,7 @@ img {
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
-    padding: 40px 20px; }
+    padding: 8rem 20px; }
     .search .containerish {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -1293,7 +1293,7 @@ img {
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
-    padding: 40px 20px; }
+    padding: 10rem 20px; }
     .search .containerish {
       display: grid;
       grid-template-columns: min-content 1fr min-content;
