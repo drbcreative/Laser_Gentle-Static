@@ -51,25 +51,37 @@
   }
   /* HERO ********************************************************* */
   .hero {
-    background: url("../img/hero-bg@2x.jpg") center / cover;
-    min-height: 55vh;
-    overflow: hidden;
-    position: relative;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
+    .slide {
+      background: $color-main;
+      padding: 40px 20px;
+      height: 50vh;
+      display: flex;
+      align-items: center;
 
-    .containerish {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
 
-      .section-info {
-        grid-column: 2;
-        background: rgba($color-light, 0.8);
-        padding: 2rem;
+        .slide-info {
+          grid-column: 1;
+        }
       }
     }
+    .slide-1 {
+      background: url("../../img/hero-1@2x.jpg") center / cover;
+    }
+    .slide-2 {
+      background: url("../../img/hero-2@2x.jpg") center / cover;
+    }
+    .slide-3 {
+      background: url("../../img/hero-3@2x.jpg") center / cover;
+    }
+    .slide-4 {
+      background: url("../../img/hero-4@2x.jpg") center / cover;
+    }
   }
+
   /* SEARCH ******************************************************* */
   .search {
     background: $color-white;
@@ -315,28 +327,33 @@
     }
   }
   /* HERO ********************************************************* */
+
   .hero {
-    background: url("../img/hero-bg@2x.jpg") center / cover;
-    min-height: 55vh;
-    overflow: hidden;
-    position: relative;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
+    .slide {
+      background: $color-main;
+      padding: 40px 20px;
+      height: 65vh;
 
-    .containerish {
-      display: grid;
-      grid-template-columns: 1fr max-content;
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-      .section-info {
-        grid-column: 2;
-        background: transparent;
-        padding: 0;
-
-        p {
-          max-width: 490px;
+        .slide-info {
+          grid-column: 1;
         }
       }
+    }
+    .slide-1 {
+      background: url("../../img/hero-1@2x.jpg") center / cover;
+    }
+    .slide-2 {
+      background: url("../../img/hero-2@2x.jpg") center / cover;
+    }
+    .slide-3 {
+      background: url("../../img/hero-3@2x.jpg") center / cover;
+    }
+    .slide-4 {
+      background: url("../../img/hero-4@2x.jpg") center / cover;
     }
   }
   /* SEARCH ******************************************************* */
@@ -526,6 +543,12 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   /* TOPBAR ******************************************************* */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* TOPBAR ******************************************************* */
   .topbar {
     .containerish {
       .topbar-link {
@@ -537,9 +560,9 @@
   }
   /* NAVBAR ******************************************************* */
   .navbar-wrapper {
-    // background: transparent;
+    background: transparent;
     .containerish {
-      padding: 0 2rem;
+      padding: 0.5rem 2rem;
     }
   }
   .navbar {
@@ -558,23 +581,32 @@
   }
   /* HERO ********************************************************* */
   .hero {
-    background: url("../img/hero-bg@2x.jpg") center / cover;
-    min-height: 574px;
+    .slide {
+      height: 95vh;
+      margin-top: 30px;
+      background: $color-main;
 
-    .containerish {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-      .section-info {
-        grid-column: 2;
-        background: transparent;
-        padding: 0;
-        justify-self: center;
-
-        p {
-          max-width: 490px;
+        .slide-info {
+          grid-column: 1;
+          padding-left: 4rem;
         }
       }
+    }
+    .slide-1 {
+      background: url("../../img/hero-1@2x.jpg") center / cover;
+    }
+    .slide-2 {
+      background: url("../../img/hero-2@2x.jpg") center / cover;
+    }
+    .slide-3 {
+      background: url("../../img/hero-3@2x.jpg") center right / cover;
+    }
+    .slide-4 {
+      background: url("../../img/hero-4@2x.jpg") center / cover;
     }
   }
   /* SEARCH ******************************************************* */
@@ -711,6 +743,7 @@
 @media screen and (min-width: 1400px) {
   /* TOPBAR ******************************************************* */
   /* HERO ********************************************************* */
+
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */

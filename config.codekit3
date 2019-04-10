@@ -225,48 +225,48 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/hero-1.png": {
-		"ft": 32768,
-		"iS": 2833143,
+	"/img/hero-1@2x.jpg": {
+		"ft": 16384,
+		"iS": 221620,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/hero-1.png",
+		"oAP": "/img/hero-1@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"/img/hero-2.png": {
-		"ft": 32768,
-		"iS": 2044692,
+	"/img/hero-2@2x.jpg": {
+		"ft": 16384,
+		"iS": 235312,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/hero-2.png",
+		"oAP": "/img/hero-2@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"/img/hero-3.png": {
-		"ft": 32768,
-		"iS": 2116961,
+	"/img/hero-3@2x.jpg": {
+		"ft": 16384,
+		"iS": 193756,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/hero-3.png",
+		"oAP": "/img/hero-3@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/img/hero-4.png": {
-		"ft": 32768,
-		"iS": 1016590,
+	"/img/hero-4@2x.jpg": {
+		"ft": 16384,
+		"iS": 115578,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/hero-4.png",
+		"oAP": "/img/hero-4@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/ig-img.png": {

@@ -266,7 +266,7 @@ header {
 /* -------------------------------------------------------------------------- */
 .ui-btn {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05rem;
@@ -374,7 +374,7 @@ header {
   border: 1px solid #fff;
   color: #fff; }
   .ui-btn-white-ol:hover {
-    color: #2c2c38;
+    color: #837f95;
     background-color: #d9d9d9;
     border: 1px solid #d9d9d9;
     text-decoration: none; }
@@ -418,14 +418,11 @@ section {
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
-.hero {
+.hero .slide {
   background: #837f95;
-  min-height: 65vh;
-  overflow: hidden;
-  position: relative;
-  padding: 40px 20px;
-  display: flex;
-  align-items: center; }
+  padding: 40px 20px; }
+  .hero .slide .containerish {
+    display: grid; }
 
 /* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */
@@ -907,21 +904,26 @@ img {
       align-items: center;
       justify-content: flex-end; }
   /* HERO ********************************************************* */
-  .hero {
-    background: url("../img/hero-bg@2x.jpg") center/cover;
-    min-height: 55vh;
-    overflow: hidden;
-    position: relative;
+  .hero .slide {
+    background: #837f95;
     padding: 40px 20px;
+    height: 50vh;
     display: flex;
     align-items: center; }
-    .hero .containerish {
+    .hero .slide .containerish {
       display: grid;
-      grid-template-columns: 1fr 3fr; }
-      .hero .containerish .section-info {
-        grid-column: 2;
-        background: rgba(240, 240, 237, 0.8);
-        padding: 2rem; }
+      grid-template-columns: 1fr 1fr;
+      align-items: center; }
+      .hero .slide .containerish .slide-info {
+        grid-column: 1; }
+  .hero .slide-1 {
+    background: url("../../img/hero-1@2x.jpg") center/cover; }
+  .hero .slide-2 {
+    background: url("../../img/hero-2@2x.jpg") center/cover; }
+  .hero .slide-3 {
+    background: url("../../img/hero-3@2x.jpg") center/cover; }
+  .hero .slide-4 {
+    background: url("../../img/hero-4@2x.jpg") center/cover; }
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
@@ -1095,23 +1097,23 @@ img {
       align-items: center;
       justify-content: flex-end; }
   /* HERO ********************************************************* */
-  .hero {
-    background: url("../img/hero-bg@2x.jpg") center/cover;
-    min-height: 55vh;
-    overflow: hidden;
-    position: relative;
+  .hero .slide {
+    background: #837f95;
     padding: 40px 20px;
-    display: flex;
-    align-items: center; }
-    .hero .containerish {
+    height: 65vh; }
+    .hero .slide .containerish {
       display: grid;
-      grid-template-columns: 1fr max-content; }
-      .hero .containerish .section-info {
-        grid-column: 2;
-        background: transparent;
-        padding: 0; }
-        .hero .containerish .section-info p {
-          max-width: 490px; }
+      grid-template-columns: 1fr 1fr; }
+      .hero .slide .containerish .slide-info {
+        grid-column: 1; }
+  .hero .slide-1 {
+    background: url("../../img/hero-1@2x.jpg") center/cover; }
+  .hero .slide-2 {
+    background: url("../../img/hero-2@2x.jpg") center/cover; }
+  .hero .slide-3 {
+    background: url("../../img/hero-3@2x.jpg") center/cover; }
+  .hero .slide-4 {
+    background: url("../../img/hero-4@2x.jpg") center/cover; }
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
@@ -1249,13 +1251,20 @@ img {
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   /* TOPBAR ******************************************************* */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* TOPBAR ******************************************************* */
   .topbar .containerish {
     padding: 0.2rem 2rem; }
     .topbar .containerish .topbar-link {
       display: inline-flex; }
   /* NAVBAR ******************************************************* */
-  .navbar-wrapper .containerish {
-    padding: 0 2rem; }
+  .navbar-wrapper {
+    background: transparent; }
+    .navbar-wrapper .containerish {
+      padding: 0.5rem 2rem; }
   .navbar .nav-logo {
     max-width: 250px; }
   .nav-item {
@@ -1264,19 +1273,24 @@ img {
     padding-right: 0;
     padding-left: 0; }
   /* HERO ********************************************************* */
-  .hero {
-    background: url("../img/hero-bg@2x.jpg") center/cover;
-    min-height: 574px; }
-    .hero .containerish {
+  .hero .slide {
+    height: 95vh;
+    margin-top: 30px;
+    background: #837f95; }
+    .hero .slide .containerish {
       display: grid;
       grid-template-columns: 1fr 1fr; }
-      .hero .containerish .section-info {
-        grid-column: 2;
-        background: transparent;
-        padding: 0;
-        justify-self: center; }
-        .hero .containerish .section-info p {
-          max-width: 490px; }
+      .hero .slide .containerish .slide-info {
+        grid-column: 1;
+        padding-left: 4rem; }
+  .hero .slide-1 {
+    background: url("../../img/hero-1@2x.jpg") center/cover; }
+  .hero .slide-2 {
+    background: url("../../img/hero-2@2x.jpg") center/cover; }
+  .hero .slide-3 {
+    background: url("../../img/hero-3@2x.jpg") center right/cover; }
+  .hero .slide-4 {
+    background: url("../../img/hero-4@2x.jpg") center/cover; }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   .botox-fillers {
