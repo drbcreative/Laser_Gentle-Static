@@ -169,6 +169,28 @@
       }
     }
   }
+  /* COOLSCULPTING ************************************************ */
+  .coolsculpting {
+    padding: 40px 20px;
+    overflow: visible !important;
+    .containerish {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      height: 400px;
+
+      img {
+        position: absolute;
+        height: 250px;
+        width: auto;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24;
+      }
+    }
+  }
   /* SEARCH ******************************************************* */
   .search {
     background: $color-white;
@@ -441,6 +463,28 @@
     }
     .slide-4 {
       background: url("../../img/hero-4@2x.jpg") center / cover;
+    }
+  }
+  /* COOLSCULPTING ************************************************ */
+  .coolsculpting {
+    padding: 40px 20px;
+    overflow: visible !important;
+    .containerish {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      height: 450px;
+
+      img {
+        position: absolute;
+        height: 350px;
+        width: auto;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24;
+      }
     }
   }
   /* SEARCH ******************************************************* */

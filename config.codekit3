@@ -159,6 +159,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/coolsculpting-bg.jpg": {
+		"ft": 16384,
+		"iS": 14526,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/coolsculpting-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/coolsculpting-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 54853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/coolsculpting-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/event-bg.jpg": {
 		"ft": 16384,
 		"iS": 13934,
@@ -451,8 +473,8 @@
 		"oA": 0,
 		"oAP": "/img/woman-horiz@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

@@ -101,6 +101,25 @@ section {
   }
 }
 /* -------------------------------------------------------------------------- */
+/* COOLSCULPTING SECTION */
+/* -------------------------------------------------------------------------- */
+.coolsculpting {
+  // background: #e8e6f4;
+  background: url("../../img/coolsculpting-bg@2x.jpg") center / cover;
+  padding: 40px 20px;
+  .containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .section-info {
+      max-width: 780px;
+      text-align: center;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */
 /* -------------------------------------------------------------------------- */
 .search {

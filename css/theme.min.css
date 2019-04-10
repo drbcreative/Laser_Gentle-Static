@@ -485,6 +485,21 @@ section {
       margin-bottom: 2rem; }
 
 /* -------------------------------------------------------------------------- */
+/* COOLSCULPTING SECTION */
+/* -------------------------------------------------------------------------- */
+.coolsculpting {
+  background: url("../../img/coolsculpting-bg@2x.jpg") center/cover;
+  padding: 40px 20px; }
+  .coolsculpting .containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    .coolsculpting .containerish .section-info {
+      max-width: 780px;
+      text-align: center; }
+
+/* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */
 /* -------------------------------------------------------------------------- */
 .search {
@@ -1049,6 +1064,24 @@ img {
         align-self: center;
         justify-self: center;
         opacity: 0.5; }
+  /* COOLSCULPTING ************************************************ */
+  .coolsculpting {
+    padding: 40px 20px;
+    overflow: visible !important; }
+    .coolsculpting .containerish {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      height: 400px; }
+      .coolsculpting .containerish img {
+        position: absolute;
+        height: 250px;
+        width: auto;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24; }
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
@@ -1239,6 +1272,24 @@ img {
     background: url("../../img/hero-3@2x.jpg") center/cover; }
   .hero .slide-4 {
     background: url("../../img/hero-4@2x.jpg") center/cover; }
+  /* COOLSCULPTING ************************************************ */
+  .coolsculpting {
+    padding: 40px 20px;
+    overflow: visible !important; }
+    .coolsculpting .containerish {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      height: 450px; }
+      .coolsculpting .containerish img {
+        position: absolute;
+        height: 350px;
+        width: auto;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24; }
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
