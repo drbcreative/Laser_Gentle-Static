@@ -1,0 +1,1417 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------------------- */
+/* COLOR THEME */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700|Open+Sans:300,300i,400,600,700");
+.color-main {
+  color: #837f95; }
+
+.color-dark {
+  color: #2c2c38; }
+
+.color-dark-accent {
+  color: #787787; }
+
+.color-extra-dark {
+  color: #000; }
+
+.color-light {
+  color: #f0f0ed; }
+
+.color-light-accent {
+  color: #9397b2; }
+
+.color-extra-light {
+  color: #fff; }
+
+.color-white {
+  color: #fff; }
+
+.color-black {
+  color: #000; }
+
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+/* Primary Header */
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 300; }
+  h1.is-bold {
+    font-weight: 700; }
+  h1.is-italic {
+    font-style: italic; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 300; }
+  h2.is-light {
+    font-weight: 300; }
+  h2.is-bold {
+    font-weight: 700; }
+  h2.is-italic {
+    font-style: italic; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 300; }
+
+/* All Other Headers */
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.footer-header {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  line-height: 30px; }
+  .footer-header.is-light {
+    font-weight: 300; }
+  .footer-header.is-bold {
+    font-weight: 700; }
+  .footer-header.is-italic {
+    font-style: italic; }
+
+.body-copy {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  .body-copy.is-bold {
+    font-weight: 700; }
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+/* Footer2 Text */
+.small-copy, .topbar .containerish .topbar-link {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Open Sans", sans-serif; }
+  .small-copy.is-semibold, .topbar .containerish .is-semibold.topbar-link {
+    font-weight: 600; }
+  .small-copy.is-bold, .topbar .containerish .is-bold.topbar-link {
+    font-weight: 700; }
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto; }
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important; }
+
+h2 {
+  margin: 1rem 0 1rem 0; }
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important; }
+  h2 {
+    font-size: 200%; }
+  h1 {
+    line-height: 2rem; }
+  h2,
+  h3 {
+    line-height: 2rem; } }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------------------------- */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 9999; }
+
+/* -------------------------------------------------------------------------- */
+/* TOP BAR */
+/* -------------------------------------------------------------------------- */
+.topbar {
+  width: 100%;
+  height: 30px;
+  height: auto;
+  background-color: #9397b2; }
+  .topbar .containerish {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 0.2rem 0.5rem; }
+    .topbar .containerish .topbar-link {
+      color: #fff; }
+      .topbar .containerish .topbar-link:hover {
+        color: #2c2c38;
+        text-decoration: none; }
+    .topbar .containerish .social-link {
+      color: #fff;
+      margin-right: 0.5rem; }
+      .topbar .containerish .social-link:hover {
+        color: #2c2c38;
+        text-decoration: none; }
+      .topbar .containerish .social-link p {
+        display: inline-block;
+        line-height: 0;
+        margin: 0;
+        margin-left: 0.2rem; }
+    .topbar .containerish .social-link:last-child {
+      margin-right: 0 !important; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .col-right {
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .topbar-link {
+      margin-right: 1rem;
+      display: none; }
+    .topbar .containerish .topbar-link:last-child {
+      margin-right: 0 !important;
+      display: inline-block; }
+
+/* -------------------------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------------------------- */
+.navbar-wrapper {
+  background: url("../img/nav-bg@2x.jpg") center/cover;
+  position: relative; }
+  .navbar-wrapper .containerish {
+    max-width: 100%;
+    padding: 0 1rem; }
+
+.navbar .nav-logo {
+  max-width: 150px; }
+
+.nav-item {
+  margin-right: 0.7rem; }
+  .nav-item .nav-link {
+    font-family: "Open Sans", sans-serif !important;
+    color: #2c2c38 !important;
+    font-size: 0.875rem;
+    font-style: normal; }
+    .nav-item .nav-link:hover {
+      color: #837f95 !important; }
+
+.nav-item .nav-link:last-child {
+  padding-right: 0;
+  padding-left: 0; }
+
+.nav-item.nav-divider {
+  position: relative; }
+  .nav-item.nav-divider::after {
+    content: "•";
+    color: #837f95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+.nav-item:last-child {
+  margin-right: 0 !important; }
+  .nav-item:last-child .nav-link {
+    margin-right: 0; }
+
+.dropdown-menu {
+  background-color: #f0f0ed;
+  border-color: transparent;
+  margin-top: 0 !important; }
+  .dropdown-menu .dropdown-item {
+    color: #2c2c38;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: transparent;
+      color: #837f95; }
+    .dropdown-menu .dropdown-item:focus {
+      background: transparent; }
+
+.dropdown-toggle::after {
+  border: none !important;
+  margin-left: 0 !important; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTON STYLES */
+/* -------------------------------------------------------------------------- */
+.ui-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  line-height: 0.9375rem;
+  padding: 0.6rem 0rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out; }
+
+.ui-btn-main {
+  background-color: #837f95;
+  border: 1px solid #837f95;
+  color: #fff; }
+  .ui-btn-main:hover {
+    color: #fff;
+    border: 1px solid #9e9bac;
+    background-color: #9e9bac;
+    text-decoration: none; }
+
+.ui-btn-main-ol {
+  background-color: transparent;
+  border: 1px solid #837f95;
+  color: #837f95; }
+  .ui-btn-main-ol:hover {
+    color: #f0f0ed;
+    border: 1px solid #9e9bac;
+    background-color: #9e9bac;
+    text-decoration: none; }
+
+.ui-btn-light {
+  background-color: #f0f0ed;
+  border: 1px solid #f0f0ed;
+  color: #2c2c38; }
+  .ui-btn-light:hover {
+    color: #2c2c38;
+    background-color: #cdcdc3;
+    border: 1px solid #cdcdc3;
+    text-decoration: none; }
+
+.ui-btn-light-accent {
+  background-color: #9397b2;
+  border: 1px solid #9397b2;
+  color: #fff; }
+  .ui-btn-light-accent:hover {
+    color: #fff;
+    background-color: #c0c2d2;
+    border: 1px solid #c0c2d2;
+    text-decoration: none; }
+
+.ui-btn-dark-accent {
+  background-color: #787787;
+  border: 1px solid #787787;
+  color: #fff; }
+  .ui-btn-dark-accent:hover {
+    color: #fff;
+    background-color: #a0a0ab;
+    border: 1px solid #a0a0ab;
+    text-decoration: none; }
+
+.ui-btn-extra-light-accent {
+  background-color: #f0f0ed;
+  border: 1px solid #f0f0ed;
+  color: #fff; }
+  .ui-btn-extra-light-accent:hover {
+    color: #fff;
+    background-color: #f0f0ed;
+    border: 1px solid #f0f0ed;
+    text-decoration: none; }
+
+.ui-btn-dark {
+  background-color: #2c2c38;
+  border: 1px solid #2c2c38;
+  color: #fff; }
+  .ui-btn-dark:hover {
+    color: #fff;
+    background-color: #4e4e63;
+    border: 1px solid #4e4e63;
+    text-decoration: none; }
+
+.ui-btn-light-ol {
+  background-color: transparent;
+  border: 1px solid #f0f0ed;
+  color: #f0f0ed; }
+  .ui-btn-light-ol:hover {
+    color: #2c2c38;
+    background-color: rgba(240, 240, 237, 0.5);
+    border: 1px solid rgba(240, 240, 237, 0.5);
+    text-decoration: none; }
+
+.ui-btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #837f95; }
+  .ui-btn-white:hover {
+    color: #837f95;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    text-decoration: none; }
+
+.ui-btn-white-ol {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+  .ui-btn-white-ol:hover {
+    color: #2c2c38;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    text-decoration: none; }
+
+.ui-btn-group .ui-btn:not(:last-child) {
+  margin-right: 0.85rem; }
+
+/* -------------------------------------------------------------------------- */
+/* LINKS - SITEWIDE */
+/* -------------------------------------------------------------------------- */
+.gen-link-light {
+  color: #837f95; }
+  .gen-link-light:hover {
+    color: #2c2c38; }
+
+/* -------------------------------------------------------------------------- */
+/* IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+.img-border {
+  border: 3px solid #fff; }
+
+.img-shadow {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08); }
+
+.img-round {
+  border-radius: 10px; }
+
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.containerish {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0; }
+
+section {
+  overflow: hidden; }
+
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background: url("../img/hero-bg@2x.jpg") center right/cover;
+  min-height: 65vh;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center; }
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH SECTION */
+/* -------------------------------------------------------------------------- */
+.search {
+  background: #fff;
+  padding: 40px 20px; }
+  .search .containerish {
+    display: grid; }
+    .search .containerish .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem; }
+    .search .containerish .form-control:not(button) {
+      border: 1px solid #ededed; }
+    .search .containerish ::placeholder {
+      color: #3e3a42;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px; }
+
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+.botox-fillers {
+  padding: 40px 20px 0 20px;
+  background: url("../img/botox-bg@2x.jpg") center/cover; }
+  .botox-fillers .containerish {
+    display: grid; }
+    .botox-fillers .containerish .section-info {
+      margin-bottom: 2rem;
+      margin: 0 auto;
+      margin-bottom: 2rem; }
+    .botox-fillers .containerish img {
+      margin: 0 auto; }
+
+/* -------------------------------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------------------------------- */
+.aboutus {
+  padding: 40px 20px;
+  background: url("../img/aboutus-bg@2x.jpg") center/cover;
+  min-height: 200px; }
+  .aboutus .section-info {
+    max-width: 900px;
+    margin: 0 auto; }
+
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+.newsletter {
+  background: url("../img/newsletter-bg@2x.jpg") center/cover;
+  min-height: 200px;
+  align-items: center; }
+  .newsletter .containerish {
+    padding: 40px 20px;
+    display: grid; }
+    .newsletter .containerish h3,
+    .newsletter .containerish h2,
+    .newsletter .containerish p {
+      text-align: center; }
+    .newsletter .containerish p {
+      margin-top: 0.5rem; }
+    .newsletter .containerish .form-control {
+      margin-bottom: 0.5rem;
+      border-radius: 0; }
+    .newsletter .containerish .form-control:last-child {
+      margin-bottom: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* LASER HAIR REMOVAL AND ELECTROLYSIS */
+/* -------------------------------------------------------------------------- */
+.lhr-electrolysis {
+  padding: 40px 20px;
+  background: url("../img/electrolysis-bg@2x.jpg") center/cover;
+  min-height: 200px; }
+  .lhr-electrolysis .containerish {
+    display: grid; }
+
+/* -------------------------------------------------------------------------- */
+/* FACIALS SECTION */
+/* -------------------------------------------------------------------------- */
+.facials {
+  padding: 0 20px 40px 20px;
+  background: url("../img/facials-bg@2x.jpg") center/cover; }
+  .facials .containerish {
+    display: grid; }
+
+/* -------------------------------------------------------------------------- */
+/* KYBELLA SECTION */
+/* -------------------------------------------------------------------------- */
+.kybella {
+  padding: 40px 20px 0 20px;
+  background: url("../img/kybella-bg@2x.jpg") center/cover;
+  min-height: 200px; }
+  .kybella .containerish {
+    display: grid; }
+
+/* -------------------------------------------------------------------------- */
+/* EVENT */
+/* -------------------------------------------------------------------------- */
+.event .event-top {
+  background: url("../img/event-bg@2x.jpg") center/cover;
+  min-height: 100px;
+  padding: 40px 20px 0 20px; }
+  .event .event-top .containerish {
+    display: grid; }
+
+.event .event-bottom {
+  background: #fff;
+  min-height: 100px;
+  padding: 0px 20px 40px 20px; }
+  .event .event-bottom .containerish {
+    display: grid; }
+    .event .event-bottom .containerish .section-info {
+      background: #f0f0ed;
+      padding: 1rem; }
+      .event .event-bottom .containerish .section-info .lead-copy {
+        font-weight: 500 !important; }
+
+/* -------------------------------------------------------------------------- */
+/* APPOINTMENTS SECTION */
+/* -------------------------------------------------------------------------- */
+.appointments {
+  background: url("../img/appointment-bg@2x.jpg") center/cover;
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .appointments h2,
+  .appointments p {
+    margin: 0 !important; }
+  .appointments p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important; }
+  .appointments .form-control {
+    border-radius: 0; }
+  .appointments input {
+    height: 43px; }
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FOOTER 1 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer1 {
+  min-height: 300px; }
+  .footer1 .footer-link {
+    color: #2c2c38;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px; }
+    .footer1 .footer-link:hover {
+      text-decoration: none;
+      color: #837f95; }
+  .footer1 .footer-header {
+    margin-top: 0 !important; }
+  .footer1 .containerish {
+    display: grid; }
+    .footer1 .containerish .footer-left {
+      background: #f0f0ed;
+      padding: 40px 20px; }
+      .footer1 .containerish .footer-left .footer-header {
+        margin-bottom: 2rem !important; }
+      .footer1 .containerish .footer-left .ui-btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.2rem 1rem;
+        margin-bottom: 0 !important;
+        vertical-align: middle; }
+    .footer1 .containerish .footer-right {
+      background: url("../img/footer-right-bg@2x.jpg") center/cover;
+      padding: 40px 20px;
+      display: grid; }
+      .footer1 .containerish .footer-right .footer-header {
+        margin-bottom: 2rem !important; }
+      .footer1 .containerish .footer-right .right-left {
+        margin-bottom: 2rem; }
+      .footer1 .containerish .footer-right .right-right ul {
+        padding: 0;
+        list-style-type: none; }
+        .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+          line-height: 40px !important; }
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER 2 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer2 {
+  background-color: #9397b2;
+  width: 100%;
+  padding: 0.6rem 30px; }
+  .footer2 .footer-link {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300; }
+    .footer2 .footer-link:hover {
+      text-decoration: none;
+      color: #2c2c38; }
+
+/* -------------------------------------------------------------------------- */
+/* ANIMATION STYLES */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* WORDPRESS STYLES */
+/* -------------------------------------------------------------------------- */
+.breadcrumbs {
+  background: #2c2c38;
+  font-family: "Open Sans", sans-serif; }
+  .breadcrumbs a {
+    color: #9397b2; }
+    .breadcrumbs a:hover {
+      color: #f0f0ed; }
+  .breadcrumbs .current {
+    color: #f0f0ed; }
+
+.shareme {
+  font-family: "Open Sans", sans-serif; }
+  .shareme a {
+    color: #837f95; }
+    .shareme a:hover {
+      color: #2c2c38; }
+
+.inner-bg {
+  background: url("../img/inner-bg@2x.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* -------------------------------------------------------------------------- */
+/* BANNER STYLES */
+/* -------------------------------------------------------------------------- */
+.banner-bg {
+  height: 400px;
+  width: 100%; }
+
+.archive-title {
+  font-variant-caps: initial; }
+
+.banner {
+  background-color: #837f95; }
+
+#banner-img-wrap {
+  height: 300px;
+  width: 100%;
+  overflow: hidden; }
+  #banner-img-wrap #banner-img {
+    width: 100%;
+    height: auto; }
+
+/* -------------------------------------------------------------------------- */
+/* POST SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+#postsection {
+  padding: 40px 10px; }
+  #postsection h1 {
+    color: #2c2c38;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.125rem;
+    /* 50px */
+    line-height: 3rem;
+    font-weight: 300;
+    font-style: normal; }
+  #postsection h2,
+  #postsection h3,
+  #postsection h4,
+  #postsection h5,
+  #postsection h6 {
+    color: #837f95;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.1875rem;
+    /* 35px */
+    line-height: 2.1875rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1rem; }
+  #postsection p {
+    font-weight: 300; }
+  @media screen and (min-width: 768px) {
+    #postsection {
+      padding: 80px 10px; } }
+
+/* -------------------------------------------------------------------------- */
+/* PAGE SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.pagesection h2,
+.pagesection h3,
+.pagesection h4 {
+  color: #837f95; }
+
+.pagesection p:not(a) {
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+.pagesection p:last-child {
+  margin-bottom: 0; }
+
+.pagesection a:not(.ui-btn) {
+  color: #837f95; }
+
+.pagesection .map-full {
+  width: 100%;
+  height: 400px; }
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-5,
+.sec-5 {
+  min-height: 400px !important;
+  padding: 4rem 10px !important; }
+
+/* -------------------------------------------------------------------------- */
+/* SECTION IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  height: auto; }
+
+/* -------------------------------------------------------------------------- */
+/* SVG Color: Topbar, footer and share */
+/* -------------------------------------------------------------------------- */
+.icons-topbar {
+  width: 14px;
+  height: 16px; }
+  .icons-topbar path {
+    fill: #2c2c38; }
+
+.icons-topbar:hover path {
+  fill: #f0f0ed; }
+
+.social-link-footer {
+  width: 13.13px;
+  height: 15px; }
+  .social-link-footer path {
+    fill: #f0f0ed; }
+
+.social-link-footer:hover path {
+  fill: #9397b2; }
+
+.social-link-share {
+  width: 14px;
+  height: 16px; }
+  .social-link-share path {
+    fill: #837f95; }
+
+.social-link-share:hover path {
+  fill: #2c2c38; }
+
+.breadcrum-home {
+  width: 16px;
+  height: 14px; }
+  .breadcrum-home path {
+    fill: #9397b2; }
+
+.breadcrum-home:hover path {
+  fill: #f0f0ed; }
+
+.icon-close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+  .icon-close path {
+    fill: #fff; }
+
+/* -------------------------------------------------------------------------- */
+/* Search Page*/
+/* -------------------------------------------------------------------------- */
+#open-search {
+  padding-right: 19px; }
+
+#search-overlay {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999999;
+  padding: 170px 60px 0;
+  position: fixed;
+  top: 0; }
+  #search-overlay em {
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 30px;
+    color: #000; }
+  #search-overlay a {
+    color: #000;
+    font-weight: 700; }
+  #search-overlay .form-control::-webkit-input-placeholder {
+    color: #fff; }
+  #search-overlay .form-control::-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+  #search-overlay .form-control:-ms-input-placeholder {
+    color: #fff; }
+  #search-overlay .form-control:-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+
+.search-results em {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  margin-bottom: 60px; }
+
+/* -------------------------------------------------------------------------- */
+/* Pagination */
+/* -------------------------------------------------------------------------- */
+.pagination {
+  display: table !important;
+  color: #5c89a9; }
+  .pagination a {
+    margin-right: 2rem;
+    color: #a19991; }
+  .pagination a:hover {
+    color: #2b2b2b; }
+  .pagination .current {
+    margin-right: 2rem;
+    color: #a19991; }
+  .pagination .dots {
+    flex: inherit;
+    margin-right: 2rem; }
+
+/* -------------------------------------------------------------------------- */
+/* Form Error Box */
+/* -------------------------------------------------------------------------- */
+.alert-info {
+  width: 320px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #bee5eb; }
+  .alert-info ul {
+    padding: 0;
+    margin: 0; }
+    .alert-info ul li {
+      list-style: none;
+      padding: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* SMALL BREAKPOINT (Landscape Phones and Up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem; } }
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .ui-btn {
+    display: inline-flex;
+    min-width: 220px; }
+  /* TOPBAR ******************************************************* */
+  .topbar .containerish {
+    max-width: 100% !important;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.2rem 0.5rem; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+    .topbar .containerish .col-right {
+      grid-row: 1;
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+  /* HERO ********************************************************* */
+  .hero {
+    background: url("../img/hero-bg@2x.jpg") center/cover;
+    min-height: 55vh;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center; }
+    .hero .containerish {
+      display: grid;
+      grid-template-columns: 1fr 3fr; }
+      .hero .containerish .section-info {
+        grid-column: 2;
+        background: rgba(240, 240, 237, 0.8);
+        padding: 2rem; }
+  /* SEARCH ******************************************************* */
+  .search {
+    background: #fff;
+    padding: 40px 20px; }
+    .search .containerish {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-column-gap: 1rem; }
+      .search .containerish .form-control {
+        border-radius: 0;
+        margin-bottom: 0.5rem; }
+      .search .containerish .form-control:not(button) {
+        border: 1px solid #ededed; }
+      .search .containerish ::placeholder {
+        color: #3e3a42;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px; }
+  /* BOTOX AND FILLERS ******************************************** */
+  .botox-fillers {
+    padding: 40px 20px 0 20px;
+    background: url("../img/botox-bg@2x.jpg") center/cover; }
+    .botox-fillers .containerish {
+      display: grid;
+      max-width: 65%; }
+      .botox-fillers .containerish .section-info {
+        margin-bottom: 2rem;
+        margin: 0 auto;
+        margin-bottom: 2rem; }
+      .botox-fillers .containerish img {
+        margin: 0 auto; }
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  .newsletter {
+    align-items: center; }
+    .newsletter .containerish {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 1rem; }
+      .newsletter .containerish h3,
+      .newsletter .containerish h2 {
+        text-align: center; }
+      .newsletter .containerish h2 {
+        grid-column: 1 / -1;
+        grid-row: 1; }
+      .newsletter .containerish p.body-copy {
+        grid-row: 2;
+        grid-column: 1 / -1;
+        text-align: center; }
+      .newsletter .containerish input[type="text"] {
+        grid-row: 3;
+        grid-column: 1 / 2; }
+      .newsletter .containerish input[type="email"] {
+        grid-row: 3;
+        grid-column: 2 / 3; }
+      .newsletter .containerish button {
+        grid-row: 3;
+        grid-column: 3 / 3;
+        width: 100% !important; }
+      .newsletter .containerish .form-control {
+        margin-bottom: 0.5rem;
+        border-radius: 0; }
+      .newsletter .containerish .form-control:last-child {
+        margin-bottom: 0; }
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis .containerish {
+    display: grid;
+    max-width: 65%; }
+  /* FACIALS ****************************************************** */
+  .facials {
+    padding: 0 20px 40px 20px;
+    background: url("../img/facials-bg@2x.jpg") center/cover; }
+    .facials .containerish {
+      display: grid;
+      max-width: 65%; }
+  /* KYBELLA ****************************************************** */
+  .kybella {
+    padding: 40px 20px 0 20px;
+    background: url("../img/kybella-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .kybella .containerish {
+      max-width: 65%;
+      display: grid; }
+  /* EVENT ******************************************************** */
+  .event .event-top {
+    min-height: 100px;
+    padding: 40px 20px 0 20px; }
+    .event .event-top .containerish {
+      max-width: 760px !important;
+      display: grid; }
+  .event .event-bottom {
+    min-height: 100px;
+    padding: 0px 20px 40px 20px; }
+    .event .event-bottom .containerish {
+      max-width: 760px !important;
+      display: grid; }
+      .event .event-bottom .containerish .section-info {
+        padding: 2rem 1rem; }
+  /* APPOINTMENTS ************************************************* */
+  .appointments {
+    background: url("../img/appointment-bg@2x.jpg") center/cover;
+    min-height: 400px;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .appointments .form-control {
+      border-radius: 0; }
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      display: grid;
+      grid-template-columns: 1fr 2fr; }
+      .footer1 .containerish .footer-left {
+        background: #f0f0ed;
+        padding: 40px 20px; }
+        .footer1 .containerish .footer-left .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle; }
+      .footer1 .containerish .footer-right {
+        background: url("../img/footer-right-bg@2x.jpg") center/cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 2rem; }
+        .footer1 .containerish .footer-right .right-right ul {
+          padding: 0;
+          list-style-type: none; }
+          .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+            line-height: 40px !important; } }
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+    width: 225px; }
+  .dropdown:hover > .dropdown-menu {
+    display: block; }
+  /* TOPBAR ******************************************************* */
+  .topbar .containerish {
+    grid-template-columns: max-content 1fr max-content;
+    padding: 0.2rem 1rem; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+    .topbar .containerish .col-mid {
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .col-right {
+      grid-row: 1;
+      grid-column: 3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+  /* HERO ********************************************************* */
+  .hero {
+    background: url("../img/hero-bg@2x.jpg") center/cover;
+    min-height: 55vh;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center; }
+    .hero .containerish {
+      display: grid;
+      grid-template-columns: 1fr max-content; }
+      .hero .containerish .section-info {
+        grid-column: 2;
+        background: transparent;
+        padding: 0; }
+        .hero .containerish .section-info p {
+          max-width: 490px; }
+  /* SEARCH ******************************************************* */
+  .search {
+    background: #fff;
+    padding: 40px 20px; }
+    .search .containerish {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center; }
+      .search .containerish .form-control {
+        border-radius: 0;
+        margin-bottom: 0; }
+      .search .containerish .form-control:not(button) {
+        border: 1px solid #ededed; }
+      .search .containerish ::placeholder {
+        color: #3e3a42;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px; }
+  /* BOTOX AND FILLERS ******************************************** */
+  .botox-fillers {
+    padding: 0 20px;
+    overflow: hidden; }
+    .botox-fillers .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      max-width: 1200px; }
+      .botox-fillers .containerish .section-info {
+        grid-column: 1 / 3;
+        grid-row: 1; }
+      .botox-fillers .containerish img {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        position: relative;
+        width: 600px !important;
+        max-width: 700px !important;
+        right: -70px; }
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  .newsletter {
+    align-items: center; }
+    .newsletter .containerish {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr; }
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 40px 20px;
+    background: url("../img/electrolysis-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .lhr-electrolysis .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      max-width: 1200px; }
+  /* FACIALS ****************************************************** */
+  .facials {
+    padding: 0 20px;
+    background: url("../img/facials-bg@2x.jpg") center/cover; }
+    .facials .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      max-width: 1200px;
+      align-items: center; }
+      .facials .containerish img {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        width: 600px;
+        position: relative;
+        left: -100px; }
+      .facials .containerish .section-info {
+        grid-column: 2 / 4;
+        grid-row: 1; }
+  /* KYBELLA ****************************************************** */
+  .kybella {
+    padding: 0px 20px;
+    background: url("../img/kybella-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .kybella .containerish {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: flex-end; }
+      .kybella .containerish .section-info {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        padding-bottom: 4rem; }
+      .kybella .containerish img {
+        grid-row: 1;
+        grid-column: 2 / 4;
+        width: 600px;
+        position: relative;
+        right: -30px; }
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem; }
+      .footer1 .containerish .footer-left {
+        background: #f0f0ed;
+        padding: 2rem 6rem; }
+        .footer1 .containerish .footer-left .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle; }
+      .footer1 .containerish .footer-right {
+        background: url("../img/footer-right-bg@2x.jpg") center/cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 0; }
+        .footer1 .containerish .footer-right .right-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .footer1 .containerish .footer-right .right-right ul {
+            padding: 0;
+            list-style-type: none; }
+            .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+              line-height: 40px !important; } }
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  /* TOPBAR ******************************************************* */
+  .topbar .containerish {
+    padding: 0.2rem 2rem; }
+    .topbar .containerish .topbar-link {
+      display: inline-flex; }
+  /* NAVBAR ******************************************************* */
+  .navbar-wrapper .containerish {
+    padding: 0 2rem; }
+  .navbar .nav-logo {
+    max-width: 200px;
+    margin-top: 18px; }
+  .nav-item {
+    margin-right: 1.5rem; }
+    .nav-item .nav-link {
+      font-family: "Open Sans", sans-serif !important;
+      color: #2c2c38 !important;
+      font-size: 0.875rem;
+      font-style: normal; }
+      .nav-item .nav-link:hover {
+        color: #837f95 !important; }
+  .nav-item .nav-link:last-child {
+    padding-right: 0;
+    padding-left: 0; }
+  /* HERO ********************************************************* */
+  .hero {
+    background: url("../img/hero-bg@2x.jpg") center/cover;
+    min-height: 574px; }
+    .hero .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .hero .containerish .section-info {
+        grid-column: 2;
+        background: transparent;
+        padding: 0;
+        justify-self: center; }
+        .hero .containerish .section-info p {
+          max-width: 490px; }
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  .botox-fillers {
+    overflow: hidden; }
+    .botox-fillers .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: auto;
+      align-items: center; }
+      .botox-fillers .containerish .section-info {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        max-width: 580px; }
+      .botox-fillers .containerish img {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        position: relative;
+        width: 700px;
+        right: -50px; }
+  /* ABOUT US ***************************************************** */
+  .aboutus {
+    padding: 60px 20px;
+    background: url("../img/aboutus-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .aboutus .section-info {
+      max-width: 900px;
+      margin: 0 auto; }
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 60px 20px;
+    background: url("../img/electrolysis-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .lhr-electrolysis .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      max-width: 1200px; }
+  /* FACIALS ****************************************************** */
+  .facials .containerish img {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 700px;
+    position: relative;
+    left: -100px; }
+  /* KYBELLA ****************************************************** */
+  .kybella {
+    padding: 0px 20px;
+    background: url("../img/kybella-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .kybella .containerish {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: flex-end; }
+      .kybella .containerish .section-info {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        padding-bottom: 4rem; }
+      .kybella .containerish img {
+        grid-row: 1;
+        grid-column: 2 / 4;
+        width: 700px;
+        position: relative;
+        right: -30px; }
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-column-gap: 2rem; }
+      .footer1 .containerish .footer-left {
+        background: #f0f0ed;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .footer1 .containerish .footer-left img {
+          max-width: 300px; }
+      .footer1 .containerish .footer-right {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 2rem; }
+        .footer1 .containerish .footer-right .right-right {
+          align-items: flex-start; } }
+
+/* -------------------------------------------------------------------------- */
+/* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  .kybella .containerish img {
+    grid-row: 1;
+    grid-column: 2 / 4;
+    width: 800px;
+    position: relative;
+    right: -30px; }
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }

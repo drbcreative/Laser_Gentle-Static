@@ -1,0 +1,203 @@
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.containerish {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+}
+section {
+  overflow: hidden;
+}
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background: url("../img/hero-bg@2x.jpg") center right / cover;
+  min-height: 65vh;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH SECTION */
+/* -------------------------------------------------------------------------- */
+.search {
+  background: $color-white;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+
+    .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control:not(button) {
+      border: 1px solid #ededed;
+    }
+
+    ::placeholder {
+      color: #3e3a42;
+      font-family: $font-primary;
+      font-size: 15px;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+.botox-fillers {
+  padding: 40px 20px 0 20px;
+  background: url("../img/botox-bg@2x.jpg") center / cover;
+  .containerish {
+    display: grid;
+
+    .section-info {
+      margin-bottom: 2rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------------------------------- */
+.aboutus {
+  padding: 40px 20px;
+  background: url("../img/aboutus-bg@2x.jpg") center / cover;
+  min-height: 200px;
+
+  .section-info {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+.newsletter {
+  background: url("../img/newsletter-bg@2x.jpg") center / cover;
+  min-height: 200px;
+  align-items: center;
+  .containerish {
+    padding: 40px 20px;
+    display: grid;
+    h3,
+    h2,
+    p {
+      text-align: center;
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+    .form-control {
+      margin-bottom: 0.5rem;
+      border-radius: 0;
+    }
+    .form-control:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* LASER HAIR REMOVAL AND ELECTROLYSIS */
+/* -------------------------------------------------------------------------- */
+.lhr-electrolysis {
+  padding: 40px 20px;
+  background: url("../img/electrolysis-bg@2x.jpg") center / cover;
+  min-height: 200px;
+
+  .containerish {
+    display: grid;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* FACIALS SECTION */
+/* -------------------------------------------------------------------------- */
+.facials {
+  padding: 0 20px 40px 20px;
+  background: url("../img/facials-bg@2x.jpg") center / cover;
+  .containerish {
+    display: grid;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* KYBELLA SECTION */
+/* -------------------------------------------------------------------------- */
+.kybella {
+  padding: 40px 20px 0 20px;
+  background: url("../img/kybella-bg@2x.jpg") center / cover;
+  min-height: 200px;
+
+  .containerish {
+    display: grid;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* EVENT */
+/* -------------------------------------------------------------------------- */
+.event {
+  .event-top {
+    background: url("../img/event-bg@2x.jpg") center / cover;
+    min-height: 100px;
+    padding: 40px 20px 0 20px;
+    .containerish {
+      display: grid;
+    }
+  }
+  .event-bottom {
+    background: $color-white;
+    min-height: 100px;
+    padding: 0px 20px 40px 20px;
+    .containerish {
+      display: grid;
+      .section-info {
+        background: $color-light;
+        padding: 1rem;
+
+        .lead-copy {
+          font-weight: 500 !important;
+        }
+      }
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* APPOINTMENTS SECTION */
+/* -------------------------------------------------------------------------- */
+.appointments {
+  background: url("../img/appointment-bg@2x.jpg") center / cover;
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2,
+  p {
+    margin: 0 !important;
+  }
+  p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .form-control {
+    border-radius: 0;
+  }
+  input {
+    height: 43px;
+  }
+}
