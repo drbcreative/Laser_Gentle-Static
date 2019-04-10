@@ -129,13 +129,13 @@ header {
   position: relative;
 
   &::after {
-    content: "•";
-    color: $color-main;
+    content: "|";
+    color: $color-light;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
+    opacity: 0.3;
   }
 }
 
