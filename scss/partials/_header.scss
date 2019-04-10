@@ -15,7 +15,7 @@ header {
   height: 30px;
   height: auto;
   // padding: .3rem 0;
-  background-color: $color-light-accent;
+  background-color: $color-dark-accent;
 
   .containerish {
     display: grid;
@@ -56,6 +56,12 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      p {
+        color: white;
+        margin: 0 !important;
+        margin-right: 0.5rem !important;
+      }
     }
     // .col-mid {
     //   display: none;
@@ -69,7 +75,7 @@ header {
 
     .topbar-link {
       margin-right: 1rem;
-      display: none;
+      // display: none;
     }
     .topbar-link:last-child {
       margin-right: 0 !important;
@@ -82,7 +88,7 @@ header {
 /* NAVBAR */
 /* -------------------------------------------------------------------------- */
 .navbar-wrapper {
-  background: url("../img/nav-bg@2x.jpg") center / cover;
+  background: $color-main;
   position: relative;
 
   .containerish {
@@ -104,12 +110,12 @@ header {
   // font-family: $font-primary !important;
   .nav-link {
     font-family: $font-primary !important;
-    color: $color-dark !important;
+    color: $color-white !important;
     font-size: 0.875rem;
     font-style: normal;
 
     &:hover {
-      color: $color-main !important;
+      color: $color-dark-accent !important;
     }
   }
 }
