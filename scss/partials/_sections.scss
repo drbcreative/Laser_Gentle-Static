@@ -201,57 +201,35 @@ section {
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
 .botox-fillers {
-  padding: 40px 20px 0 20px;
-  background: url("../img/botox-bg@2x.jpg") center / cover;
-  .containerish {
-    display: grid;
-
-    .section-info {
-      margin-bottom: 2rem;
-      margin: 0 auto;
-      margin-bottom: 2rem;
-    }
-
-    img {
-      margin: 0 auto;
-    }
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/* LASER HAIR REMOVAL AND ELECTROLYSIS */
-/* -------------------------------------------------------------------------- */
-.lhr-electrolysis {
   padding: 40px 20px;
-  background: url("../img/electrolysis-bg@2x.jpg") center / cover;
+  background: url("../../img/botox-fillers-bg@2x.jpg") center / cover;
   min-height: 200px;
 
   .containerish {
     display: grid;
   }
 }
-/* -------------------------------------------------------------------------- */
-/* FACIALS SECTION */
-/* -------------------------------------------------------------------------- */
-.facials {
-  padding: 0 20px 40px 20px;
-  background: url("../img/facials-bg@2x.jpg") center / cover;
-  .containerish {
-    display: grid;
-  }
-}
-/* -------------------------------------------------------------------------- */
-/* KYBELLA SECTION */
-/* -------------------------------------------------------------------------- */
-.kybella {
-  padding: 40px 20px 0 20px;
-  background: url("../img/kybella-bg@2x.jpg") center / cover;
-  min-height: 200px;
 
-  .containerish {
-    display: grid;
+/* -------------------------------------------------------------------------- */
+/* PHOTOFACIAL SECTION */
+/* -------------------------------------------------------------------------- */
+.photofacial {
+  height: auto;
+  .section-img {
+    background-image: radial-gradient(#e8e6f4, #8b8b8b);
+    min-height: 300px;
+  }
+  .section-info {
+    background: url("../../img/coolsculpting-bg@2x.jpg") center / cover;
+    text-align: center;
+    padding: 40px 20px;
+
+    .containerish {
+      max-width: 780px;
+    }
   }
 }
+
 /* -------------------------------------------------------------------------- */
 /* EVENT */
 /* -------------------------------------------------------------------------- */

@@ -115,17 +115,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/botox-fillers-bg.jpg": {
-		"ft": 16384,
-		"iS": 33810,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/botox-fillers-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/botox-fillers-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 120719,
@@ -134,7 +123,7 @@
 		"oAP": "/img/botox-fillers-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/botox.jpg": {
