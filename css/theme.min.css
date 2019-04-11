@@ -1388,7 +1388,7 @@ img {
       padding: 40px 20px; }
   /* EVENT ******************************************************** */
   .event {
-    padding: 1rem 1rem 8rem 1rem; }
+    padding: 1rem; }
     .event .containerish {
       padding: 40px 20px;
       background: url("../../img/event-bg@2x.jpg") center/cover;
@@ -1408,35 +1408,30 @@ img {
   /* LHR & ULTHERAPY ********************************************** */
   .lhr-ultherapy {
     background-image: radial-gradient(#9f9ead, #787787);
-    height: 350px;
-    padding: 0px 20px;
-    overflow: visible;
-    display: flex;
-    align-items: center; }
+    min-height: 75vh;
+    padding: 20px 20px; }
     .lhr-ultherapy .containerish {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-row-gap: 1rem;
-      max-width: initial; }
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      align-items: center;
+      max-width: 1200px; }
       .lhr-ultherapy .containerish .lhr-img,
       .lhr-ultherapy .containerish .ultherapy-img {
         margin-bottom: 0; }
       .lhr-ultherapy .containerish .lhr-img {
-        position: relative;
-        top: -20px; }
+        grid-row: 1;
+        grid-column: 1 / 2; }
       .lhr-ultherapy .containerish .ultherapy-img {
-        grid-column: 2;
         grid-row: 2;
-        position: relative;
-        bottom: -20px; }
+        grid-column: 2 / 3; }
       .lhr-ultherapy .containerish .section-info {
-        align-self: flex-end;
-        padding: 2rem; }
-      .lhr-ultherapy .containerish .section-info:last-child {
-        grid-column: 1;
-        grid-row: 2;
-        align-self: flex-start; }
+        padding: 1rem; }
+        .lhr-ultherapy .containerish .section-info .ui-btn-group .ui-btn {
+          width: auto;
+          min-width: 175px;
+          padding: 0.8rem 1rem; }
       .lhr-ultherapy .containerish .section-info:not(:last-child) {
         margin-bottom: 0; }
   /* APPOINTMENTS ************************************************* */
@@ -1616,7 +1611,7 @@ img {
       padding: 40px 20px; }
   /* EVENT ******************************************************** */
   .event {
-    padding: 2rem 1rem 10rem 1rem; }
+    padding: 2rem 1rem 10% 1rem; }
     .event .containerish {
       padding: 40px 40px;
       background: url("../../img/event-bg@2x.jpg") center/cover;
@@ -1642,7 +1637,8 @@ img {
     padding: 0px 20px;
     overflow: visible;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 10%; }
     .lhr-ultherapy .containerish {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1753,3 +1749,5 @@ img {
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */ }
+
+/*# sourceMappingURL=theme.min.css.map */
