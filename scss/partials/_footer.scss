@@ -8,7 +8,7 @@
   min-height: 300px;
 
   .footer-link {
-    color: $color-dark;
+    color: $color-dark-accent;
     font-family: $font-primary;
     font-weight: 300;
     font-size: 15px;
@@ -27,7 +27,7 @@
     display: grid;
 
     .footer-left {
-      background: $color-light;
+      background: $color-white;
       padding: 40px 20px;
 
       .footer-header {
@@ -72,20 +72,49 @@
 /* FOOTER 2 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer2 {
-  background-color: $color-light-accent;
+  background-color: $color-dark-accent;
   width: 100%;
   padding: 0.6rem 30px;
 
-  .footer-link {
-    color: $color-white;
-    font-family: $font-primary;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 300;
+  .containerish {
+    max-width: 100%;
+    padding: 0 0.2rem;
+    display: grid;
 
-    &:hover {
-      text-decoration: none;
-      color: $color-dark;
+    .foot-left {
+      display: flex;
+      align-items: center;
+
+      p {
+        display: inline-block;
+      }
+    }
+
+    .social-link {
+      color: $color-white;
+      margin-right: 0.5rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-dark;
+      }
+    }
+    .social-link:last-child {
+      margin-right: 0;
+    }
+
+    .footer-link {
+      color: $color-white;
+      font-family: $font-primary;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 300;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-dark;
+      }
     }
   }
 }

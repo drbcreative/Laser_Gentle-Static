@@ -69,16 +69,16 @@
       }
     }
     .slide-1 {
-      background: url("../../img/hero-1@2x.jpg") center / cover;
+      background: url("../img/hero-1@2x.jpg") center / cover;
     }
     .slide-2 {
-      background: url("../../img/hero-2@2x.jpg") center / cover;
+      background: url("../img/hero-2@2x.jpg") center / cover;
     }
     .slide-3 {
-      background: url("../../img/hero-3@2x.jpg") center / cover;
+      background: url("../img/hero-3@2x.jpg") center / cover;
     }
     .slide-4 {
-      background: url("../../img/hero-4@2x.jpg") center / cover;
+      background: url("../img/hero-4@2x.jpg") center / cover;
     }
   }
 
@@ -319,7 +319,7 @@
       }
     }
     .section-info {
-      background: url("../../img/coolsculpting-bg@2x.jpg") center / cover;
+      background: url("../img/coolsculpting-bg@2x.jpg") center / cover;
       text-align: center;
       padding: 40px 20px;
     }
@@ -329,7 +329,7 @@
   .event {
     .containerish {
       padding: 40px 20px;
-      background: url("../../img/event-bg@2x.jpg") center / cover;
+      background: url("../img/event-bg@2x.jpg") center / cover;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -482,16 +482,16 @@
       }
     }
     .slide-1 {
-      background: url("../../img/hero-1@2x.jpg") center / cover;
+      background: url("../img/hero-1@2x.jpg") center / cover;
     }
     .slide-2 {
-      background: url("../../img/hero-2@2x.jpg") center / cover;
+      background: url("../img/hero-2@2x.jpg") center / cover;
     }
     .slide-3 {
-      background: url("../../img/hero-3@2x.jpg") center / cover;
+      background: url("../img/hero-3@2x.jpg") center / cover;
     }
     .slide-4 {
-      background: url("../../img/hero-4@2x.jpg") center / cover;
+      background: url("../img/hero-4@2x.jpg") center / cover;
     }
   }
   /* COOLSCULPTING ************************************************ */
@@ -630,7 +630,7 @@
       }
     }
     .section-info {
-      background: url("../../img/coolsculpting-bg@2x.jpg") center / cover;
+      background: url("../img/coolsculpting-bg@2x.jpg") center / cover;
       text-align: center;
       padding: 40px 20px;
     }
@@ -641,7 +641,7 @@
     padding: 1rem;
     .containerish {
       padding: 40px 20px;
-      background: url("../../img/event-bg@2x.jpg") center / cover;
+      background: url("../img/event-bg@2x.jpg") center / cover;
       display: grid;
       grid-template-columns: 1fr 2fr;
       align-items: center;
@@ -710,45 +710,38 @@
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
   .footer1 {
-    min-height: 300px;
-
     .containerish {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
+      grid-template-columns: 1fr 2fr;
 
       .footer-left {
-        background: $color-light;
-        padding: 2rem 6rem;
+        background: $color-white;
+        padding: 40px 20px;
 
-        .ui-btn {
-          display: inline-block !important;
-          width: auto;
-          min-width: 50px !important;
-          max-width: 150px !important;
-          padding: 0.2rem 1rem;
-          margin-bottom: 0 !important;
-          vertical-align: middle;
+        .footer-header {
+          margin-bottom: 2rem !important;
         }
       }
       .footer-right {
         background: url("../img/footer-right-bg@2x.jpg") center / cover;
         padding: 40px 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2rem;
+        grid-column-gap: 1rem;
 
         .footer-header {
           margin-bottom: 2rem !important;
         }
 
         .right-left {
-          margin-bottom: 0;
+          margin-bottom: 0rem;
+
+          .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1rem;
+          }
         }
         .right-right {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           ul {
             padding: 0;
             list-style-type: none;
@@ -758,6 +751,29 @@
             }
           }
         }
+      }
+    }
+  }
+  /* footer 2 */
+  .footer2 {
+    padding: 0.5rem 1.1rem;
+    .containerish {
+      max-width: 100%;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .foot-left {
+        display: flex;
+        align-items: center;
+
+        p {
+          display: inline-block;
+        }
+      }
+      .foot-right {
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
@@ -822,16 +838,16 @@
       }
     }
     .slide-1 {
-      background: url("../../img/hero-1@2x.jpg") center / cover;
+      background: url("../img/hero-1@2x.jpg") center / cover;
     }
     .slide-2 {
-      background: url("../../img/hero-2@2x.jpg") center / cover;
+      background: url("../img/hero-2@2x.jpg") center / cover;
     }
     .slide-3 {
-      background: url("../../img/hero-3@2x.jpg") center right / cover;
+      background: url("../img/hero-3@2x.jpg") center right / cover;
     }
     .slide-4 {
-      background: url("../../img/hero-4@2x.jpg") center / cover;
+      background: url("../img/hero-4@2x.jpg") center / cover;
     }
   }
   /* LOCATIONS **************************************************** */
@@ -955,7 +971,7 @@
       }
     }
     .section-info {
-      background: url("../../img/coolsculpting-bg@2x.jpg") center / cover;
+      background: url("../img/coolsculpting-bg@2x.jpg") center / cover;
       text-align: center;
       padding: 40px 20px;
     }
@@ -965,7 +981,7 @@
     padding: 2rem 1rem 10% 1rem;
     .containerish {
       padding: 40px 40px;
-      background: url("../../img/event-bg@2x.jpg") center / cover;
+      background: url("../img/event-bg@2x.jpg") center / cover;
       display: grid;
       grid-template-columns: 1fr 2fr;
       align-items: center;
@@ -1063,7 +1079,7 @@
         }
       }
       .footer-right {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-column-gap: 2rem;
 
         .footer-header {
@@ -1080,6 +1096,7 @@
     }
   }
 }
+
 /* -------------------------------------------------------------------------- */
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
 /* -------------------------------------------------------------------------- */
