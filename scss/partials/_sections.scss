@@ -146,6 +146,31 @@ section {
   }
 }
 /* -------------------------------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------------------------------- */
+.aboutus {
+  padding: 40px 20px;
+  background-image: radial-gradient(#fff, #f0f0ed);
+  min-height: 200px;
+
+  .containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    img {
+      // border: 1px solid #707070;
+      margin-bottom: 2rem;
+    }
+
+    .section-info {
+      max-width: 780px;
+      text-align: center;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
 .botox-fillers {
@@ -163,19 +188,6 @@ section {
     img {
       margin: 0 auto;
     }
-  }
-}
-/* -------------------------------------------------------------------------- */
-/* ABOUT US */
-/* -------------------------------------------------------------------------- */
-.aboutus {
-  padding: 40px 20px;
-  background: url("../img/aboutus-bg@2x.jpg") center / cover;
-  min-height: 200px;
-
-  .section-info {
-    max-width: 900px;
-    margin: 0 auto;
   }
 }
 

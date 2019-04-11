@@ -518,6 +518,24 @@ section {
       font-size: 15px; }
 
 /* -------------------------------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------------------------------- */
+.aboutus {
+  padding: 40px 20px;
+  background-image: radial-gradient(#fff, #f0f0ed);
+  min-height: 200px; }
+  .aboutus .containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    .aboutus .containerish img {
+      margin-bottom: 2rem; }
+    .aboutus .containerish .section-info {
+      max-width: 780px;
+      text-align: center; }
+
+/* -------------------------------------------------------------------------- */
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
 .botox-fillers {
@@ -531,17 +549,6 @@ section {
       margin-bottom: 2rem; }
     .botox-fillers .containerish img {
       margin: 0 auto; }
-
-/* -------------------------------------------------------------------------- */
-/* ABOUT US */
-/* -------------------------------------------------------------------------- */
-.aboutus {
-  padding: 40px 20px;
-  background: url("../img/aboutus-bg@2x.jpg") center/cover;
-  min-height: 200px; }
-  .aboutus .section-info {
-    max-width: 900px;
-    margin: 0 auto; }
 
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
@@ -1085,7 +1092,7 @@ img {
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
-    padding: 8rem 20px; }
+    padding: 6rem 20px 12rem 20px; }
     .search .containerish {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -1099,20 +1106,27 @@ img {
         color: #3e3a42;
         font-family: "Open Sans", sans-serif;
         font-size: 15px; }
-  /* BOTOX AND FILLERS ******************************************** */
-  .botox-fillers {
-    padding: 40px 20px 0 20px;
-    background: url("../img/botox-bg@2x.jpg") center/cover; }
-    .botox-fillers .containerish {
-      display: grid;
-      max-width: 65%; }
-      .botox-fillers .containerish .section-info {
-        margin-bottom: 2rem;
-        margin: 0 auto;
-        margin-bottom: 2rem; }
-      .botox-fillers .containerish img {
-        margin: 0 auto; }
   /* ABOUT US ***************************************************** */
+  .aboutus {
+    padding: 40px 20px;
+    overflow: visible !important; }
+    .aboutus .containerish {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: relative;
+      height: 420px; }
+      .aboutus .containerish img {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24; }
+      .aboutus .containerish .section-info {
+        max-width: 780px;
+        text-align: center; }
   /* NEWSLETTER *************************************************** */
   .newsletter {
     align-items: center; }
@@ -1282,10 +1296,13 @@ img {
       justify-content: flex-start;
       position: relative;
       height: 450px; }
+      .coolsculpting .containerish .section-info {
+        max-width: 780px;
+        text-align: center; }
       .coolsculpting .containerish img {
         position: absolute;
-        height: 350px;
-        width: auto;
+        height: auto;
+        width: 100%;
         bottom: -150px;
         left: 50%;
         transform: translateX(-50%);
@@ -1293,7 +1310,7 @@ img {
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
-    padding: 10rem 20px; }
+    padding: 10rem 20px 15rem 20px; }
     .search .containerish {
       display: grid;
       grid-template-columns: min-content 1fr min-content;
@@ -1307,6 +1324,27 @@ img {
         color: #3e3a42;
         font-family: "Open Sans", sans-serif;
         font-size: 15px; }
+  /* ABOUT US ***************************************************** */
+  .aboutus {
+    padding: 40px 20px;
+    overflow: visible !important; }
+    .aboutus .containerish {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      height: 500px; }
+      .aboutus .containerish img {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: -220px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24; }
+      .aboutus .containerish .section-info {
+        max-width: 780px;
+        text-align: center; }
   /* BOTOX AND FILLERS ******************************************** */
   .botox-fillers {
     padding: 0 20px;
@@ -1327,7 +1365,6 @@ img {
         width: 600px !important;
         max-width: 700px !important;
         right: -70px; }
-  /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
   .newsletter {
     align-items: center; }
@@ -1475,6 +1512,43 @@ img {
       grid-template-columns: 1fr 100px 1fr;
       align-items: center; }
   /* SEARCH ******************************************************* */
+  .search {
+    background: #fff;
+    padding: 12rem 20px 18rem 20px; }
+    .search .containerish {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center; }
+      .search .containerish .form-control {
+        border-radius: 0;
+        margin-bottom: 0; }
+      .search .containerish .form-control:not(button) {
+        border: 1px solid #ededed; }
+      .search .containerish ::placeholder {
+        color: #3e3a42;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px; }
+  /* ABOUT US ***************************************************** */
+  .aboutus {
+    padding: 40px 20px;
+    overflow: visible !important; }
+    .aboutus .containerish {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      height: 600px; }
+      .aboutus .containerish img {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: -250px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 24; }
+      .aboutus .containerish .section-info {
+        max-width: 780px;
+        text-align: center; }
   /* BOTOX AND FILLERS ******************************************** */
   .botox-fillers {
     overflow: hidden; }
@@ -1493,14 +1567,6 @@ img {
         position: relative;
         width: 700px;
         right: -50px; }
-  /* ABOUT US ***************************************************** */
-  .aboutus {
-    padding: 60px 20px;
-    background: url("../img/aboutus-bg@2x.jpg") center/cover;
-    min-height: 200px; }
-    .aboutus .section-info {
-      max-width: 900px;
-      margin: 0 auto; }
   /* NEWSLETTER *************************************************** */
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
   .lhr-electrolysis {
