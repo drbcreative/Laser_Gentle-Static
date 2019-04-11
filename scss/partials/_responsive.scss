@@ -340,6 +340,26 @@
       }
     }
   }
+  /* LHR & ULTHERAPY ********************************************** */
+  .lhr-ultherapy {
+    background-image: radial-gradient(#9f9ead, #787787);
+    min-height: 75vh;
+    padding: 60px 20px;
+
+    .containerish {
+      display: grid;
+      max-width: 65%;
+
+      .lhr-img,
+      .ultherapy-img {
+        margin-bottom: 2rem;
+      }
+
+      .section-info:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
   /* APPOINTMENTS ************************************************* */
   .appointments {
     background: url("../img/appointment-bg@2x.jpg") center / cover;
@@ -618,7 +638,7 @@
 
   /* EVENT ******************************************************** */
   .event {
-    padding: 1rem 1rem 10rem 1rem;
+    padding: 1rem 1rem 8rem 1rem;
     .containerish {
       padding: 40px 20px;
       background: url("../../img/event-bg@2x.jpg") center / cover;
@@ -637,6 +657,53 @@
       }
 
       img {
+        margin-bottom: 0;
+      }
+    }
+  }
+  /* LHR & ULTHERAPY ********************************************** */
+  .lhr-ultherapy {
+    background-image: radial-gradient(#9f9ead, #787787);
+    height: 350px;
+    padding: 0px 20px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 1rem;
+      // align-items: flex-end;
+      max-width: initial;
+
+      .lhr-img,
+      .ultherapy-img {
+        margin-bottom: 0;
+      }
+
+      .lhr-img {
+        position: relative;
+        top: -20px;
+      }
+      .ultherapy-img {
+        grid-column: 2;
+        grid-row: 2;
+        position: relative;
+        bottom: -20px;
+      }
+      .section-info {
+        align-self: flex-end;
+        padding: 2rem;
+      }
+      .section-info:last-child {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: flex-start;
+      }
+
+      .section-info:not(:last-child) {
         margin-bottom: 0;
       }
     }
@@ -921,6 +988,56 @@
         .body-copy {
           max-width: 550px;
         }
+      }
+    }
+  }
+  /* LHR & ULTHERAPY ********************************************** */
+  .lhr-ultherapy {
+    background-image: radial-gradient(#9f9ead, #787787);
+    height: 900px;
+    padding: 0px 20px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 0.5rem;
+      grid-column-gap: 4rem;
+      // align-items: flex-end;
+      max-width: 1200px;
+
+      .lhr-img,
+      .ultherapy-img {
+        margin-bottom: 0;
+      }
+
+      .lhr-img {
+        position: relative;
+        top: -20px;
+      }
+      .ultherapy-img {
+        grid-column: 2;
+        grid-row: 2;
+        position: relative;
+        bottom: -20px;
+      }
+      .section-info#lhr {
+        align-self: center;
+        padding: 2rem;
+        margin-bottom: -50px;
+      }
+      .section-info#ultherapy {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+        // margin-top: -50px;
+      }
+
+      .section-info:not(:last-child) {
+        margin-bottom: 0;
       }
     }
   }

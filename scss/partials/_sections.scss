@@ -246,6 +246,27 @@ section {
   }
 }
 /* -------------------------------------------------------------------------- */
+/* LHR ULTHERAPY */
+/* -------------------------------------------------------------------------- */
+.lhr-ultherapy {
+  background-image: radial-gradient(#9f9ead, #787787);
+  min-height: 75vh;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+
+    .lhr-img,
+    .ultherapy-img {
+      margin-bottom: 2rem;
+    }
+
+    .section-info:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
 /* -------------------------------------------------------------------------- */
 .appointments {
