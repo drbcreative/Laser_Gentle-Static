@@ -536,25 +536,10 @@ section {
       text-align: center; }
 
 /* -------------------------------------------------------------------------- */
-/* BOTOX AND FILLERS SECTION */
-/* -------------------------------------------------------------------------- */
-.botox-fillers {
-  padding: 40px 20px 0 20px;
-  background: url("../img/botox-bg@2x.jpg") center/cover; }
-  .botox-fillers .containerish {
-    display: grid; }
-    .botox-fillers .containerish .section-info {
-      margin-bottom: 2rem;
-      margin: 0 auto;
-      margin-bottom: 2rem; }
-    .botox-fillers .containerish img {
-      margin: 0 auto; }
-
-/* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
 .newsletter {
-  background: url("../img/newsletter-bg@2x.jpg") center/cover;
+  background: #787787;
   min-height: 200px;
   align-items: center; }
   .newsletter .containerish {
@@ -571,6 +556,21 @@ section {
       border-radius: 0; }
     .newsletter .containerish .form-control:last-child {
       margin-bottom: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+.botox-fillers {
+  padding: 40px 20px 0 20px;
+  background: url("../img/botox-bg@2x.jpg") center/cover; }
+  .botox-fillers .containerish {
+    display: grid; }
+    .botox-fillers .containerish .section-info {
+      margin-bottom: 2rem;
+      margin: 0 auto;
+      margin-bottom: 2rem; }
+    .botox-fillers .containerish img {
+      margin: 0 auto; }
 
 /* -------------------------------------------------------------------------- */
 /* LASER HAIR REMOVAL AND ELECTROLYSIS */
@@ -1511,6 +1511,15 @@ img {
       display: grid;
       grid-template-columns: 1fr 100px 1fr;
       align-items: center; }
+      .locations .containerish .loc {
+        grid-template-rows: 75px 1fr; }
+        .locations .containerish .loc .loc-title {
+          font-family: "Lato", sans-serif;
+          font-size: 24px !important;
+          font-weight: 300;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          align-self: center; }
   /* SEARCH ******************************************************* */
   .search {
     background: #fff;
@@ -1639,6 +1648,22 @@ img {
 @media screen and (min-width: 1400px) {
   /* TOPBAR ******************************************************* */
   /* HERO ********************************************************* */
+  /* LOCATIONS **************************************************** */
+  .locations {
+    padding: 40px 20px; }
+    .locations .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: center; }
+      .locations .containerish .loc {
+        grid-template-rows: 75px 1fr; }
+        .locations .containerish .loc .loc-title {
+          font-family: "Lato", sans-serif;
+          font-size: 30px !important;
+          font-weight: 300;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          align-self: center; }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */

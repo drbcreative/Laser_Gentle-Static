@@ -809,6 +809,19 @@
       display: grid;
       grid-template-columns: 1fr 100px 1fr;
       align-items: center;
+      .loc {
+        grid-template-rows: 75px 1fr;
+
+        .loc-title {
+          font-family: $font-secondary;
+          font-size: 24px !important;
+          font-weight: 300;
+          // margin: 0;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          align-self: center;
+        }
+      }
     }
   }
   /* SEARCH ******************************************************* */
@@ -990,7 +1003,28 @@
 @media screen and (min-width: 1400px) {
   /* TOPBAR ******************************************************* */
   /* HERO ********************************************************* */
+  /* LOCATIONS **************************************************** */
+  .locations {
+    padding: 40px 20px;
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: center;
+      .loc {
+        grid-template-rows: 75px 1fr;
 
+        .loc-title {
+          font-family: $font-secondary;
+          font-size: 30px !important;
+          font-weight: 300;
+          // margin: 0;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          align-self: center;
+        }
+      }
+    }
+  }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */
