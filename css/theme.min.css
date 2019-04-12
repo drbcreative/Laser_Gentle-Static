@@ -269,7 +269,7 @@ header {
 .ui-btn {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05rem;
   line-height: 0.9375rem;
@@ -617,6 +617,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .appointments .containerish {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem; }
   .appointments h2,
   .appointments p {
     margin: 0 !important; }

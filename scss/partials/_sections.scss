@@ -277,6 +277,11 @@ section {
   align-items: center;
   justify-content: center;
 
+  .containerish {
+    background: rgba($color-white, 0.7);
+    padding: 2rem;
+  }
+
   h2,
   p {
     margin: 0 !important;
